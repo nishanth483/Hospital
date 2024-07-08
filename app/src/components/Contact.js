@@ -129,7 +129,7 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      await axios.post('https://dental-care-backend-5ydnwze8e-nishanth-elumalais-projects.vercel.app/', formData);
+      await axios.post('http://localhost:5000/send', formData);
       alert('Message sent successfully');
     } catch (error) {
       console.error('Error sending message:', error);
