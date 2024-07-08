@@ -129,8 +129,10 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      await axios.post('http://localhost:5000/send', formData);
+      await axios.post('https://hospitalbackend-gules.vercel.app/send', formData);
       alert('Message sent successfully');
+      console.log(formData);
+      console.log('sucessfully sent');
     } catch (error) {
       console.error('Error sending message:', error);
       alert('Failed to send message');
