@@ -1,0 +1,70 @@
+.navbar-custom {
+  background-color: #000; /* Black background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+}
+
+.navbar-custom .navbar-brand .teeth-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: #00b4d8; /* Dental blue for the icon */
+  transition: transform 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover .teeth-icon {
+  transform: rotate(20deg);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 1.2rem;
+  color: #fff; /* White text */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #00b4d8; /* Dental blue on hover */
+  transform: scale(1.1);
+}
+
+.navbar-custom .navbar-nav .nav-link:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00b4d8; /* Dental blue underline */
+  transition: width 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover:after {
+  width: 100%;
+}
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  color: #fff; /* White text */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #00b4d8; /* Dental blue on hover */
+  transform: scale(1.1);
+}
+
+.phone-link .fa-phone {
+  margin-right: 5px;
+}

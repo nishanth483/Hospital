@@ -1,0 +1,127 @@
+.hero-banner {
+  position: relative;
+  background-color: #fff; /* White background */
+  padding: 20px;
+  width: 50%; /* Decreased width */
+  height: auto; /* Adjust height to auto to fit content */
+  margin: 0 auto; /* Center the banner */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  border-radius: 8px;
+  overflow: hidden; /* Ensure content does not overflow */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide in from bottom */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Slide to original position */
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure content takes full height */
+  text-align: center; /* Center text horizontally */
+  padding: 20px; /* Add padding to avoid text overflow */
+  color: #000; /* Black text */
+}
+
+.hero-content h1 {
+  color: #000; /* Black color for heading */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Light text shadow effect */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333; /* Dark grey color for subtitle */
+}
+
+.info-card {
+  background-color: #f8f9fa; /* Light grey background for card */
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  border-radius: 8px;
+  padding: 20px;
+  color: #000; /* Black text */
+}
+
+.intro-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.learn-more-btn {
+  background-color: #00b4d8; /* Dental blue color for button */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #008bb5; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-height: 400px; /* Set a max height for the image */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation for the image */
+  border-radius: 8px;
+  filter: grayscale(0); /* Remove grayscale */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  filter: grayscale(100%); /* Apply grayscale on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-bottom: 20px; /* Add space between content and image */
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    max-height: 200px; /* Limit image height for smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,80 @@
+.about-section {
+  background: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  padding: 4rem 0;
+}
+
+.text-container {
+  background: #ffffff; /* Solid white background */
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc; /* Light grey border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section h1, .about-section h2 {
+  color: #000000;
+  font-family: 'Roboto', sans-serif; /* Font family */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  color: #333333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-section .card {
+  background-color: #ffffff; /* White background for card */
+  border: 1px solid #dcdcdc; /* Light grey border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 8px;
+  color: #000000; /* Black text for card */
+}
+
+.about-section .card .list-group-item {
+  border: none;
+  padding: 1rem 1.25rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.about-section .accordion-button {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.about-section .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.about-section .accordion-body {
+  color: #333333;
+  background-color: #f9f9f9;
+  border-top: 1px solid #dcdcdc;
+}
+
+.about-section h1, .about-section h2, .about-section p, .accordion-button {
+  transition: all 0.3s ease;
+}
+
+.about-section h1:hover, .about-section h2:hover, .accordion-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+  

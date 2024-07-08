@@ -1,0 +1,33 @@
+.footer-links a {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.footer-box {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-box h5 {
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  margin: 0;
+}
+
+.footer-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}

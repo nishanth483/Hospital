@@ -1,0 +1,70 @@
+.contact-container {
+  max-width: 450px; /* Reduced width of the card */
+  width: 80%; /* Ensure responsiveness */
+  margin: 20px auto; /* Center the container and add gap from header and footer */
+  padding: 2rem;
+  /* Slightly more transparent background */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  max-width: 400px; /* Reduced width of the form */
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.5);
+  padding : 20px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.contact-container .form-group {
+  margin-bottom: 2rem; /* Increased margin for better spacing */
+}
+
+.contact-container .form-label {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem; /* Space between label and input field */
+}
+
+.contact-container .form-control {
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  width: 100%; /* Ensures full width in smaller screens */
+  margin-bottom: 1rem; /* Space between input fields */
+}
+
+.contact-container .form-control:focus {
+  border-color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container .btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;
+  border-color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container .btn-primary:hover {
+  background-color: #444;
+  border-color: #444;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+}
