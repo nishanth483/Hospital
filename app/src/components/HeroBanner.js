@@ -13,8 +13,7 @@ const HeroBanner = () => {
             <p className="hero-subtitle">Our dental clinic offers a range of services to help you achieve a healthy and beautiful smile.</p>
             <Card className="mt-3 info-card">
               <Card.Body>
-                <p className="intro-text">Say goodbye to dental issues with our restoration services.</p>
-                <Button variant="primary" className="learn-more-btn">Learn More</Button>
+                <p className="intro-text">Say goodbye to dental issues with our restoration services.</p>   
               </Card.Body>
             </Card>
           </Col>

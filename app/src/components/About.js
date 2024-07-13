@@ -91,7 +91,6 @@
 // export default About;
 
 
-
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup, Accordion } from 'react-bootstrap';
 import './About.css';

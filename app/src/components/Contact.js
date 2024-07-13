@@ -114,7 +114,7 @@ const Contact = () => {
     name: '',
     email: '',
     message: '',
-    toEmail: '', // Set the default recipient email here
+    toEmail: 'nishanthnd63@gmail.com', // Set the default recipient email here
   });
 
   const handleChange = (e) => {
