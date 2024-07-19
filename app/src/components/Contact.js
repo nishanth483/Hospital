@@ -184,6 +184,9 @@ const Contact = () => {
           </Card.Body>
         </Card>
       </Container>
+      <a href="https://api.whatsapp.com/send/?phone=918122132314&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
+      <i className="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
     </div>
   );
 };

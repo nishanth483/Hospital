@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* 
+@keyframes backgroundChange {
+  0% {
+    background-image: url('./images2/Background.jpg');
+  }
+  
+  100% {
+    background-image: url('./images2/Background2.jpg');
+  }
+}
+
+.background-animation {
+  animation: backgroundChange 10s infinite;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+} */
+
+
+/* src/components/Gallery.css */
+

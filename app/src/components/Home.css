@@ -1,6 +1,164 @@
+.testimonials-section {
+  position: relative;
+  padding: 4rem 0;
+  z-index: 1;
+}
+
+.heading a {
+  text-decoration: none;
+  color: #007bff; /* Bright color */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  font-size: 2.5rem; /* Slightly larger font */
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.heading a:hover {
+  color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Positioning the carousel controls at the ends */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 5;
+}
+
+.carousel-control-prev {
+  left: 0;
+  margin-left: -200px;
+margin-top: 100px;
+
+}
+
+.carousel-control-next {
+  right: 0;
+  margin-right: -200px;
+  margin-top: 100px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 10px;
+  width: 300px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Single line text with ellipsis */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Single line text with ellipsis */
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonial-card:hover p {
+  white-space: normal;
+  height: auto;
+  overflow: visible;
+  background: rgba(255,255,255,0.9);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.testimonial-rating {
+  margin-bottom: 10px;
+}
+
+.star-icon {
+  color: #ffd700;
+}
+
+.google-icon {
+  font-size: 20px;
+  color: #7142f4; /* Google logo color */
+  margin-top: 10px;
+  height :  30px;
+  width : 30px;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: #25D366;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  font-size: 50px;
+}
+
+/* Additional global styles */
+@keyframes slideBackground {
+  0%, 15%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  20% {
+    transform: translateX(-50%);
+    animation-timing-function: step-end;
+  }
+  95% {
+    transform: translateX(-100%);
+    animation-timing-function: ease;
+  }
+}
+
 .home-section {
   position: relative;
-  z-index: 0;
+  overflow: hidden;
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('../images2/Background.jpg'), url('../images2/Background2.jpg'); /* Correct path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: slideBackground 30s linear infinite;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.services-section {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for content sections */
+  padding: 4rem 0;
+  margin-top: 4rem;
 }
 
 .services-section .card {
@@ -21,25 +179,26 @@
 
 .testimonials-carousel .testimonial-item, .contact-details-carousel .contact-detail-item {
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 600px;
-  color: #ffffff; /* White text color */
+  color: #000000; /* Black text color */
 }
 
 .testimonials-carousel .testimonial-text, .contact-details-carousel .contact-detail-text {
   font-size: 1.2rem;
   font-style: italic;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 1rem;
+  font-weight: bold; /* Bold text */
 }
 
 .testimonials-carousel .testimonial-author, .contact-details-carousel .contact-detail-title {
   font-size: 1rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000; /* Black text color */
 }
 
 /* Custom arrow colors */
@@ -67,4 +226,49 @@
 .cta-section .btn-success:hover {
   background-color: #0056b3;
   border-color: #0056b3;
+}
+.text-center {
+  text-align: center;
+}
+
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.carousel .testimonial-item, .carousel .contact-detail-item {
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .testimonial-text, .carousel .contact-detail-text {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: bold; /* Bold text */
+}
+
+.carousel .testimonial-author, .carousel .contact-detail-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: #25D366;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  font-size: 50px;
 }

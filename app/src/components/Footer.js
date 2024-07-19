@@ -1,47 +1,3 @@
-// import React from 'react';
-// import { Container, Row, Col } from 'react-bootstrap';
-// import './Footer.css';
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-dark text-white text-center text-lg-start">
-//       <Container className="p-4">
-//         <Row>
-//           <Col lg={4} md={6} className="mb-4 mb-md-0">
-//             <div className="footer-box shadow-sm p-3 mb-5 bg-white rounded">
-//               <h5 className="text-uppercase">About Me</h5>
-//               <p>
-//                 Dr. Maran is one of the top Bariatric Surgeons in Chennai, helping severely obese patients get their obesity treatment or weight-loss surgeries.
-//               </p>
-//               </div>
-//           </Col>
-//           <Col lg={4} md={6} className="mb-4 mb-md-0">
-//             <div className="footer-box shadow-sm p-3 mb-5 bg-white rounded">
-//               <h5 className="text-uppercase">Working Hours</h5>
-//               <p>Mon - Sat: 9.00 am - 6.00 pm</p>
-//               <p>Sunday: Closed</p>
-//             </div>
-//           </Col>
-//           <Col lg={4} md={6} className="mb-4 mb-md-0">
-//             <div className="footer-box shadow-sm p-3 mb-5 bg-white rounded">
-//               <h5 className="text-uppercase">Contacts</h5>
-//               <p>Phone: +91-9952002927</p>
-//               <p>18, 6th Cross St, CIT Colony, Mylapore, Chennai - 600 004</p>
-//               <a href="#" className="text-white">Get Directions &rarr;</a>
-//             </div>
-//           </Col>
-//         </Row>
-//       </Container>
-//       <div className="text-center p-3 bg-secondary">
-//         &copy; {new Date().getFullYear()} Dental Hospital
-//       </div>
-//     </footer>
-//   );
-// }
-
-// export default Footer;
-
-
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
@@ -55,29 +11,32 @@ const Footer = () => {
             <div className="footer-box shadow-sm p-3 bg-white rounded">
               <h5 className="text-uppercase">About Me</h5>
               <p>
-                Dr. Maran is one of the top Bariatric Surgeons in Chennai, helping severely obese patients get their obesity treatment or weight-loss surgeries.
+                Dr. Shobana Thevi, an accomplished Dental Surgeon with 8 years of expertise, excels at Elite Dental Care, Kelambakkam.
               </p>
             </div>
           </Col>
           <Col lg={4} md={6} sm={12} className="mb-4 mb-md-0">
             <div className="footer-box shadow-sm p-3 bg-white rounded">
               <h5 className="text-uppercase">Working Hours</h5>
-              <p>Mon - Sat: 9.00 am - 6.00 pm</p>
-              <p>Sunday: Closed</p>
+              <p>Mon - Sat</p>
+              <p>10:00 AM - 01:00 PM</p>
+              <p>04:00 PM - 08:00 PM</p>
             </div>
           </Col>
           <Col lg={4} md={6} sm={12} className="mb-4 mb-md-0">
             <div className="footer-box shadow-sm p-3 bg-white rounded">
               <h5 className="text-uppercase">Contacts</h5>
-              <p>Phone: +91-9952002927</p>
-              <p>18, 6th Cross St, CIT Colony, Mylapore, Chennai - 600 004</p>
-              <a href="#" className="footer-link text-primary">Get Directions &rarr;</a>
+              <p>Phone: +91-8122132314</p>
+              <p>No.23, Veeranam Road, Kelambakkam-603103</p>
+              <a href="https://www.google.com/maps/dir//12.7872082,80.2178464/@12.7871649,80.1353651,12z?entry=ttu" target="_blank" rel="noopener noreferrer" className="footer-link text-primary">
+                Directions &rarr;
+              </a>
             </div>
           </Col>
         </Row>
       </Container>
       <div className="footer-bottom text-center p-3 bg-secondary">
-        &copy; {new Date().getFullYear()} Dental Hospital
+        &copy; {new Date().getFullYear()} Elite Dental Care Kelambakkam
       </div>
     </footer>
   );

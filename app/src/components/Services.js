@@ -29,7 +29,7 @@ const servicesSectionStyle = {
   backgroundRepeat: 'no-repeat',
   position: 'relative',
   zIndex: 0,
-  padding: '4rem 0',
+ 
 };
 
 const Services = () => {
@@ -89,6 +89,9 @@ const Services = () => {
           <p>{hoveredService.longDescription}</p>
         </div>
       )}
+      <a href="https://api.whatsapp.com/send/?phone=918122132314&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
+      <i className="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
     </div>
   );
 };

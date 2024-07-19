@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: #000; /* Black background */
+  background-color: #040a12; /* Dark Navy Blue background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
@@ -63,7 +63,7 @@
 .phone-link:hover {
   color: #00b4d8; /* Dental blue on hover */
   transform: scale(1.1);
-}
+} 
 
 .phone-link .fa-phone {
   margin-right: 5px;

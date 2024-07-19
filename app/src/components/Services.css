@@ -1,6 +1,6 @@
 .services-section {
   background-color: #f8f9fa; /* Light grey background */
-  padding: 2rem 0;
+ 
 }
 
 .services-section h2 {
@@ -81,4 +81,18 @@
   font-size: 1rem;
   text-align: center;
   color: black; /* Black text color */
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: #1e8a46;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  font-size: 50px;
 }

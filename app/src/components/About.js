@@ -163,19 +163,22 @@ const About = () => {
               <Accordion.Item eventKey="2">
                 <Accordion.Header>What are your operating hours?</Accordion.Header>
                 <Accordion.Body>
-                  Our clinic is open Monday to Friday from 8 AM to 6 PM and on Saturday from 9 AM to 3 PM. We are closed on Sundays.
+                  Our clinic is open Monday to Sat from 10AM to 1PM and 4PM to 8PM. We are closed on Sundays.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header>How can I book an appointment?</Accordion.Header>
                 <Accordion.Body>
-                  You can book an appointment by calling our office, using our online booking system, or by visiting our clinic in person.
+                  You can book an appointment by calling our office and also through whatsapp by using our website.
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
           </Col>
         </Row>
       </Container>
+      <a href="https://api.whatsapp.com/send/?phone=918122132314&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
+      <i className="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
     </Container>
   );
 }

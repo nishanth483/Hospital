@@ -27,7 +27,7 @@ const ServiceDetail = () => {
   const service = serviceDetails[serviceId];
 
   return (
-    <div className="service-detail-section" style={{ marginTop: '4rem' }}>
+    <div className="service-detail-section">
       <Container>
         <h2 className="text-center mb-4">{service.title}</h2>
         <p>{service.description}</p>
