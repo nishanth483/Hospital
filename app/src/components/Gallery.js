@@ -1,30 +1,30 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import './Gallery.css';
-import elitedentalcare1 from '../images2/elitedentalcare1.jpg';
-import elitedentalcare2 from '../images2/elitedentalcare2.jpg';
-import elitedentalcare3 from '../images2/elitedentalcare3.jpg';
-import elitedentalcare4 from '../images2/elitedentalcare4.jpg';
+import gallery1 from '../images2/gallery1.jpg';
+import gallery2 from '../images2/gallery2.jpg';
+import gallery3 from '../images2/gallery3.jpg';
+import gallery4 from '../images2/gallery4.jpg';
+import gallery5 from '../images2/gallery5.jpg';
+import gallery6 from '../images2/gallery6.jpg';
+import gallery7 from '../images2/gallery7.jpg';
+import gallery8 from '../images2/gallery8.jpg';
+
+const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8];
 
 const Gallery = () => {
   return (
-    <div className="gallery-container">
+    <Container className="gallery-container">
       <div className="blur-background"></div>
       <h2>Our Gallery</h2>
-      <div className="gallery-grid">
-        <div className="gallery-item">
-          <img src={elitedentalcare1} alt="Gallery Image 1" />
-        </div>
-        <div className="gallery-item">
-          <img src={elitedentalcare2} alt="Gallery Image 2" />
-        </div>
-        <div className="gallery-item">
-          <img src={elitedentalcare3} alt="Gallery Image 3" />
-        </div>
-        <div className="gallery-item">
-          <img src={elitedentalcare4} alt="Gallery Image 4" />
-        </div>
-      </div>
-    </div>
+      <Row className="gallery-grid">
+        {images.map((image, index) => (
+          <Col xs={12} md={6} className="gallery-item" key={index}>
+            <img src={image} alt={`Gallery Image ${index + 1}`} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 

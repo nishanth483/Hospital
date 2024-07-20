@@ -33,7 +33,7 @@
 }
 
 .services-section a {
-  color: #007bff; /* Bootstrap primary color */
+   /* Bootstrap primary color */
   text-decoration: none;
   font-weight: bold;
 }

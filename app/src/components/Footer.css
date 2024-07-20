@@ -83,3 +83,29 @@
     margin-bottom: 20px;
   }
 }
+
+
+
+ .social-icons {
+  display: flex;
+  align-items: center;
+  gap : 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.social-link {
+  font-size: 30px;
+
+  transition: transform 0.3s ease;
+}
+
+ .social-link:hover {
+  transform: scale(1.1);
+}
+
+
+.link{
+  display: flex;
+  flex-wrap: column;
+}

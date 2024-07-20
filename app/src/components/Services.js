@@ -29,7 +29,7 @@ const servicesSectionStyle = {
   backgroundRepeat: 'no-repeat',
   position: 'relative',
   zIndex: 0,
- 
+ marginTop : 0
 };
 
 const Services = () => {
@@ -70,7 +70,7 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title>{service.title}</Card.Title>
                   <Card.Text>{service.shortDescription}</Card.Text>
-                  <Link to={`/service/${service.id}`}>Learn More</Link>
+                  <Link >Learn More</Link>
                 </Card.Body>
               </Card>
             </Col>
