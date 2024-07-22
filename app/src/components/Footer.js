@@ -1,8 +1,7 @@
-
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
 import React from 'react';
-import { Navbar, Nav} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faHome, faTooth, faInfoCircle, faImages } from '@fortawesome/free-solid-svg-icons';
@@ -33,18 +32,19 @@ const Footer = () => {
             <div className="footer-box shadow-sm p-3 bg-white rounded">
               <h5 className="text-uppercase">Contacts</h5>
               <p>Phone: +91-8122132314</p>
+              <p>Email: <a href="mailto:elitedentalcare2023@gmail.com" className="footer-link">elitedentalcare2023@gmail.com</a></p>
               <p>No.23, Veeranam Road, Kelambakkam-603103</p>
               <a href="https://www.google.com/maps/dir//12.7872082,80.2178464/@12.7871649,80.1353651,12z?entry=ttu" target="_blank" rel="noopener noreferrer" className="footer-link text-primary">
                 Directions &rarr;
               </a>
               <div className="social-icons">
-      <Nav.Link href="https://www.instagram.com/elitedentalcare23/" target="_blank" className="social-link">
-        <FontAwesomeIcon icon={faInstagram} style={{ color: '#E1306C', fontSize: '30px' }} />
-      </Nav.Link>
-      <Nav.Link href="https://www.facebook.com/profile.php?id=61560282252690" target="_blank" className="social-link">
-        <FontAwesomeIcon icon={faFacebook} style={{ color: '#3b5998', fontSize: '30px' }} />
-      </Nav.Link>
-    </div>
+                <Nav.Link href="https://www.instagram.com/elitedentalcare23/" target="_blank" className="social-link">
+                  <FontAwesomeIcon icon={faInstagram} style={{ color: '#E1306C', fontSize: '30px' }} />
+                </Nav.Link>
+                <Nav.Link href="https://www.facebook.com/profile.php?id=61560282252690" target="_blank" className="social-link">
+                  <FontAwesomeIcon icon={faFacebook} style={{ color: '#3b5998', fontSize: '30px' }} />
+                </Nav.Link>
+              </div>
             </div>
           </Col>
         </Row>
@@ -52,7 +52,6 @@ const Footer = () => {
       <div className="footer-bottom text-center p-3 bg-secondary">
         &copy; {new Date().getFullYear()} Elite Dental Care Kelambakkam
       </div>
-      
     </footer>
   );
 }
