@@ -5,7 +5,7 @@ import HeroBanner from './HeroBanner';
 import { reviewsData } from './reviewsData';
 import Background1 from '../images2/Background.jpg';
 import Background2 from '../images2/background11.jpg';
-import Background3 from '../images2/background12.jpg';
+import Background3 from '../images2/background19.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';

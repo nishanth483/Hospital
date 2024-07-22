@@ -24,7 +24,7 @@ const NavigationBar = () => {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img src={logo} style={{ width: '50px', height: '50px' }} alt="Logo" />
-          Elite Dental Care
+          ELITE DENTAL CARE
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -51,8 +51,7 @@ const NavigationBar = () => {
             </Nav.Link>
             <Nav.Link   href="tel:8122132314" className="phone-link">
               <FontAwesomeIcon icon={faPhone} /> 8122132314
-            </Nav.Link>
-        
+            </Nav.Link>      
           </Nav>
         </Navbar.Collapse>
       </Container>

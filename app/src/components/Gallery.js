@@ -19,7 +19,7 @@ const Gallery = () => {
       <h2>Our Gallery</h2>
       <Row className="gallery-grid">
         {images.map((image, index) => (
-          <Col xs={12} md={6} className="gallery-item" key={index}>
+          <Col xs={12} md={6} lg={4} className="gallery-item" key={index}>
             <img src={image} alt={`Gallery Image ${index + 1}`} />
           </Col>
         ))}
