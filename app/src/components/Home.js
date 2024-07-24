@@ -34,7 +34,7 @@ const services = [
 
 const contactDetails = [
   { title: 'Phone Number', description: '+918122132314' },
-  { title: 'Email', description: 'info@dentalhospital.com' },
+  { title: 'Email', description: 'elitedentalcare2023@gmail.com' },
   { title: 'Address', description: 'No.23, Veeranam Road, Kelambakkam-603103' },
   { title: 'Google Map Location', description: 'Directions', link: 'https://www.google.com/maps/dir//12.7872082,80.2178464/@12.7871649,80.1353651,12z?entry=ttu' },
 ];

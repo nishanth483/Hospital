@@ -32,7 +32,7 @@ const Footer = () => {
             <div className="footer-box shadow-sm p-3 bg-white rounded">
               <h5 className="text-uppercase">Contacts</h5>
               <p>Phone: +91-8122132314</p>
-              <p>Email: <a href="mailto:elitedentalcare2023@gmail.com" className="footer-link">elitedentalcare2023@gmail.com</a></p>
+              <p>Email:<a href="https://mail.google.com/mail/?view=cm&fs=1&to=elitedentalcare2023@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">elitedentalcare2023@gmail.com</a></p>
               <p>No.23, Veeranam Road, Kelambakkam-603103</p>
               <a href="https://www.google.com/maps/dir//12.7872082,80.2178464/@12.7871649,80.1353651,12z?entry=ttu" target="_blank" rel="noopener noreferrer" className="footer-link text-primary">
                 Directions &rarr;
