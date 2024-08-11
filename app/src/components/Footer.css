@@ -75,14 +75,22 @@
 
 .footer .social-icons .social-link {
   font-size: 24px;
-  color: #000000; /* Black color for social icons */
   margin: 0 10px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.footer .social-icons .social-link:hover {
+.footer .social-icons .social-link.instagram {
+  color: #E1306C; /* Instagram official color */
+}
+
+.footer .social-icons .social-link.facebook {
+  color: #3b5998; /* Facebook official color */
+}
+
+.footer .social-icons .social-link.instagram:hover,
+.footer .social-icons .social-link.facebook:hover {
   transform: scale(1.2);
-  color: #007bff; /* Blue color on hover */
+  color: #007bff; /* Blue color on hover for both icons */
 }
 
 .footer-bottom {

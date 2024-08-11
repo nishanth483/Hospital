@@ -159,7 +159,7 @@ const Footer = () => {
               </a>
               <div className="social-icons text-center">
                 <Nav.Link href="https://www.instagram.com/elitedentalcare23/" target="_blank" className="social-link d-inline-block">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faInstagram}  style={{ color: '#E1306C' }}  />
                 </Nav.Link>
                 <Nav.Link href="https://www.facebook.com/profile.php?id=61560282252690" target="_blank" className="social-link d-inline-block">
                   <FontAwesomeIcon icon={faFacebook} />
