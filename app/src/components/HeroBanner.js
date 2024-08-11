@@ -1,21 +1,20 @@
-// src/components/HeroBanner.js
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './HeroBanner.css';
 
 const HeroBanner = () => {
   return (
     <div className="hero-banner">
-      <Container>
-        <Row className="align-items-center">
+      <Container fluid>
+        <Row className="align-items-center no-gutters">
           <Col md={6} className="hero-content">
-            <h1>Trustworthy Dental Services</h1>
-            <p className="hero-subtitle">Our dental clinic offers a range of services to help you achieve a healthy and beautiful smile.</p>
-            <Card className="mt-3 info-card">
-              <Card.Body>
-                <p className="intro-text">Say goodbye to dental issues with our restoration services.</p>   
-              </Card.Body>
-            </Card>
+            <h1>Welcome to Elite Dental Care</h1>
+            <p className="hero-subtitle">
+              We believe that a healthy smile is the foundation of overall well-being. 
+              At our state-of-the-art clinic, we combine the latest dental technology with a personalized approach 
+              to deliver exceptional care tailored to your unique needs. Our team of highly skilled dentists and 
+              friendly staff are dedicated to ensuring your comfort and satisfaction from the moment you walk through our doors.
+            </p>
           </Col>
           <Col md={6} className="hero-image">
             <img src="/images/dentist.jpg" alt="Dentist" className="img-fluid" />

@@ -1,111 +1,105 @@
-/* .footer-links a {
-  color: #ffffff;
-  transition: color 0.3s;
-}
-
-.footer-links a:hover {
-  color: #cccccc;
-  text-decoration: none;
-}
-
-.footer-box {
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer-box h5 {
-  margin-bottom: 15px;
-}
-
-.footer-box p {
-  margin: 0;
-}
-
-.footer-box a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.footer-box a:hover {
-  text-decoration: underline;
-} */
-
-
 .footer {
   padding: 40px 0;
-  background-color: #343a40;
+  background-color: #ffffff; /* White background color for the entire footer */
+  color: #000000; /* Black text color */
 }
 
 .footer .footer-box {
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff; /* White background color for the boxes */
+  color: #000000; /* Black text color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for better contrast */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center; /* Ensure text is centered in all boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center-align content within the box */
 }
 
 .footer .footer-box:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect on hover */
 }
 
 .footer .footer-box h5 {
   margin-bottom: 15px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #000000; /* Black color for headings */
 }
 
-.footer .footer-box p {
+.footer .footer-box p,
+.footer .footer-box ul,
+.footer .footer-box li {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.7;
+  color: #000000; /* Black text color */
+}
+
+.footer .footer-box ul {
+  padding-left: 0; /* No padding for centered bullet points */
+  list-style-type: none; /* Remove default list styling */
+}
+
+.footer .footer-box ul li {
+  margin-bottom: 5px;
+  padding-left: 20px; /* Custom padding for bullet points */
+  position: relative;
+}
+
+.footer .footer-box ul li::before {
+  content: "•"; /* Custom bullet point */
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Blue bullet color */
 }
 
 .footer .footer-box a {
-  color: #007bff;
+  color: #007bff; /* Blue color for links */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer .footer-box a:hover {
-  color: #0056b3;
+  color: #0056b3; /* Darker blue on hover */
   text-decoration: underline;
 }
 
+.footer .social-icons {
+  margin-top: 15px; /* Adds space between the contact info and social icons */
+  display: flex;
+  justify-content: center; /* Centers social icons horizontally */
+  gap: 10px; /* Adds space between the icons */
+}
+
+.footer .social-icons .social-link {
+  font-size: 24px;
+  color: #000000; /* Black color for social icons */
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons .social-link:hover {
+  transform: scale(1.2);
+  color: #007bff; /* Blue color on hover */
+}
+
 .footer-bottom {
-  background-color: #6c757d;
-  color: #ffffff;
+  background-color: #f8f9fa; /* Light grey background color for the bottom section */
+  color: #000000; /* Black text color */
   padding: 10px 0;
   font-size: 0.9rem;
+  border-top: 1px solid #e9ecef; /* Subtle border at the top */
 }
 
 @media (max-width: 767.98px) {
   .footer .footer-box {
     margin-bottom: 20px;
+    text-align: center;
   }
-}
 
-
-
- .social-icons {
-  display: flex;
-  align-items: center;
-  gap : 10px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.social-link {
-  font-size: 30px;
-
-  transition: transform 0.3s ease;
-}
-
- .social-link:hover {
-  transform: scale(1.1);
-}
-
-
-.link{
-  display: flex;
-  flex-wrap: column;
+  .footer .social-icons {
+    justify-content: center;
+  }
 }

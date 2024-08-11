@@ -1,3 +1,70 @@
+/* .gallery-container {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.blur-background {
+  background-image: url('../images2/Background.jpg'); /* Use the same background image */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+
+/* .gallery-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  width: 100%;
+  max-width: 450px; /* Slightly larger square shape */
+  /* height: 450px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+} */
+
+/* .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+} */
+/* 
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) { /* Tablet and mobile view */
+  /* .gallery-item {
+    height: 300px; /* Adjust height for smaller screens */
+  /* }
+}  */
+
+
 .gallery-container {
   padding: 20px;
   text-align: center;
@@ -25,23 +92,22 @@
   color: #333;
 }
 
-.gallery-grid {
+.gallery-col {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Gap between images */
-  position: relative;
-  width: 100%; /* Ensure the grid takes up full width */
-  margin: 0 auto;
+  align-items: center;
 }
 
 .gallery-item {
-  flex: 0 0 calc(50% - 20px); /* Fixed size for two images per screen with gap */
-  height: 400px; /* Fixed height for images */
+  width: 100%;
+  max-width: 450px; /* Slightly larger square shape */
+  height: 450px; /* Slightly larger square shape */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.8); /* Transparent card */
+  padding: 10px;
 }
 
 .gallery-item img {
@@ -59,10 +125,8 @@
   transform: scale(1.05);
 }
 
-/* Media Queries */
 @media (max-width: 768px) { /* Tablet and mobile view */
   .gallery-item {
-    flex: 0 0 calc(100% - 20px); /* Fixed width for one image per screen with gap */
-    height: 300px; /* Fixed height for images */
+    height: 300px; /* Adjust height for smaller screens */
   }
 }

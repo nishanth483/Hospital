@@ -1,0 +1,23 @@
+.image-slider {
+    width: 100%;
+    height: 100vh; /* Make the slider take the full height of the viewport */
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the slider is behind other content */
+  }
+  
+  .background-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire slide area */
+  }
+  
