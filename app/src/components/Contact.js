@@ -215,7 +215,7 @@ const Contact = () => {
     email: '',
     phone: '', // New phone field
     message: '',
-    toEmail: 'nishanth1208199574@gmail.com', // Set the default recipienishant email here
+    toEmail: 'elitedentalcare2023@gmail.com' // the default recipienishant email here
   });
 
   const handleChange = (e) => {
