@@ -730,8 +730,7 @@
       
       // export default Home;
       
-
-      import React from 'react';
+ import React from 'react';
 import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
 import './Home.css';
 import HeroBanner from './HeroBanner';
@@ -766,12 +765,10 @@ const Home = () => {
   return (
     <div className="home-section">
       <div className="background-image"></div> {/* Single background image */}
-
       <HeroBanner />
-
       <div className="services-section">
         <Container>
-          <h2 className="text-center mb-4">Our Services</h2>
+          <h1 className="text-center mb-4" style={{color:'black'}}>Our Services</h1>
           <Row>
             {services.map((service, index) => (
               <Col md={4} key={index}>
@@ -789,15 +786,16 @@ const Home = () => {
 
       <div className="testimonials-section">
         <Container>
-          <h2 className="text-center mb-4 heading">
-            <a
-              href="https://www.google.com/search?client=ms-android-xiaomi-rvo2b&sca_esv=d2f84b67cec4e5c9&cs=0&sxsrf=ADLYWIL-4FP1iolaphXiEYrwuXQjN-BbKg:1721106491580&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7ukYwNW2vUmblgxYR5xFADJs5dOPFdJRsUN1OtAZ8DTGySgof8Lxkybk5NYT17Ds4VgKqZQ%3D&q=Elite+Dental+Care+-+A+Premier+Multispeciality+Dental+Clinic+and+Best+Dentist&kgs=63e8a3a8f670b98e&shem=lsde,sbseo,vslce&source=sh/x/loc/act/m1/2&shbud=9E78AC7F921C2401/1/3/LocalPoiReviews#lrd=0x3a5251e3047c93b1:0x17f89e7ede411525,1,,,"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Our Patients Speak &rarr;
-            </a>
-          </h2>
+        <h2 className="text-center mb-4 heading">
+        <a
+          href="https://www.google.com/search?client=ms-android-xiaomi-rvo2b&sca_esv=d2f84b67cec4e5c9&cs=0&sxsrf=ADLYWIL-4FP1iolaphXiEYrwuXQjN-BbKg:1721106491580&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7ukYwNW2vUmblgxYR5xFADJs5dOPFdJRsUN1OtAZ8DTGySgof8Lxkybk5NYT17Ds4VgKqZQ%3D&q=Elite+Dental+Care+-+A+Premier+Multispeciality+Dental+Clinic+and+Best+Dentist&kgs=63e8a3a8f670b98e&shem=lsde,sbseo,vslce&source=sh/x/loc/act/m1/2&shbud=9E78AC7F921C2401/1/3/LocalPoiReviews#lrd=0x3a5251e3047c93b1:0x17f89e7ede411525,1,,,"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: 'black' }}
+        >
+          Our Patients Speak &rarr;
+        </a>
+      </h2>
           <Carousel interval={2000} indicators={false} prevLabel="" nextLabel="">
             {reviewsData.map((_, index) => {
               if (index % 4 === 0) {

@@ -58,7 +58,7 @@ const Services = () => {
   return (
     <div className="services-section" style={servicesSectionStyle}>
       <Container>
-        <h2 className="text-center mb-4">Our Services</h2>
+        <h1 className="text-center mb-4" style={{color:'black'}}>Our Services</h1>
         <Row>
           {services.map((service, index) => (
             <Col md={4} key={index}>

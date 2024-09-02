@@ -1,5 +1,5 @@
 .footer {
-  padding: 40px 0;
+  padding: 20px 0; /* Reduced padding */
   background-color: #ffffff; /* White background color for the entire footer */
   color: #000000; /* Black text color */
 }
@@ -8,51 +8,33 @@
   background-color: #ffffff; /* White background color for the boxes */
   color: #000000; /* Black text color */
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for better contrast */
+  padding: 15px; /* Reduced padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center; /* Ensure text is centered in all boxes */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Center-align content within the box */
+  max-width: 450px; /* Set maximum width to reduce the size */
+  margin: 0 auto; /* Center align */
 }
 
 .footer .footer-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect on hover */
 }
 
 .footer .footer-box h5 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+  margin-bottom: 10px; /* Reduced margin */
+  font-size: 1.2rem; /* Slightly smaller font size */
   color: #000000; /* Black color for headings */
 }
 
-.footer .footer-box p,
-.footer .footer-box ul,
-.footer .footer-box li {
-  margin: 0;
-  line-height: 1.7;
+.footer .footer-box p {
+  margin: 5px 0; /* Reduced margin */
+  line-height: 1.5;
   color: #000000; /* Black text color */
-}
-
-.footer .footer-box ul {
-  padding-left: 0; /* No padding for centered bullet points */
-  list-style-type: none; /* Remove default list styling */
-}
-
-.footer .footer-box ul li {
-  margin-bottom: 5px;
-  padding-left: 20px; /* Custom padding for bullet points */
-  position: relative;
-}
-
-.footer .footer-box ul li::before {
-  content: "•"; /* Custom bullet point */
-  position: absolute;
-  left: 0;
-  color: #007bff; /* Blue bullet color */
 }
 
 .footer .footer-box a {
@@ -67,15 +49,15 @@
 }
 
 .footer .social-icons {
-  margin-top: 15px; /* Adds space between the contact info and social icons */
+  margin-top: 10px; /* Reduced space between the contact info and social icons */
   display: flex;
   justify-content: center; /* Centers social icons horizontally */
   gap: 10px; /* Adds space between the icons */
 }
 
 .footer .social-icons .social-link {
-  font-size: 24px;
-  margin: 0 10px;
+  font-size: 20px; /* Reduced icon size */
+  margin: 0 8px; /* Reduced margin */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -96,8 +78,8 @@
 .footer-bottom {
   background-color: #f8f9fa; /* Light grey background color for the bottom section */
   color: #000000; /* Black text color */
-  padding: 10px 0;
-  font-size: 0.9rem;
+  padding: 8px 0; /* Reduced padding */
+  font-size: 0.85rem; /* Slightly smaller font size */
   border-top: 1px solid #e9ecef; /* Subtle border at the top */
 }
 

@@ -188,7 +188,7 @@ const Gallery = () => {
   return (
     <Container className="gallery-container">
       <div className="blur-background"></div>
-      <h2>Our Gallery</h2>
+      <h1 style={{color:'black'}}>Our Gallery</h1>
       <Carousel indicators={false} controls={true} interval={3000}>
         {images.map((image, index) => (
           index % 2 === 0 && (
