@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Services.css';
-
 const services = [
   { id: 'teeth-whitening', title: 'Teeth Whitening', shortDescription: 'Brighten your smile with our professional teeth whitening services.', longDescription: 'Teeth whitening is a procedure that lightens teeth and helps to remove stains and discoloration. It is one of the most popular cosmetic dental procedures because it can greatly improve how your teeth look. Most dentists perform teeth whitening.', image: '/images/teeth whitening.jpg' },
   { id: 'bonding', title: 'Bonding', shortDescription: 'Repair chipped or cracked teeth with our bonding treatments.', longDescription: 'Dental bonding is a procedure in which a tooth-colored resin material (a durable plastic material) is applied and hardened with a special light, which ultimately "bonds" the material to the tooth to improve a person\'s smile.', image: '/images/bonding.jpg' },
@@ -20,7 +19,10 @@ const services = [
   { id: 'teeth-reshaping', title: 'Teeth Reshaping', shortDescription: 'Improve the appearance of your teeth with reshaping.', longDescription: 'Teeth reshaping, or contouring, is a cosmetic dental procedure that involves removing small amounts of enamel to change the shape, length, or surface of one or more teeth. It is used to correct minor imperfections.', image: '/images/tooth reshaping.jpg' },
   { id: 'veneers-and-crowns', title: 'Veneers and Crowns', shortDescription: 'Achieve a flawless smile with veneers and crowns.', longDescription: 'Veneers are thin, custom-made shells designed to cover the front surface of teeth to improve appearance. Crowns are caps placed over teeth to restore shape, size, and strength. Both enhance the appearance and function of teeth.', image: '/images/veneers and crowns.jpg' },
   { id: 'x-ray', title: 'X-ray', shortDescription: 'Accurate dental x-rays for precise diagnosis.', longDescription: 'Dental x-rays are images of your teeth that your dentist uses to evaluate your oral health. These x-rays are used with low levels of radiation to capture images of the interior of your teeth and gums, identifying problems like cavities, tooth decay, and impacted teeth.', image: '/images/x ray.jpg' },
+  { id: 'braces', title: 'Braces', shortDescription: 'Braces can correct a wide range of dental issues, including crooked, gapped, rotated, or crowded teeth.', longDescription: 'Braces Treatment: Braces can correct a wide range of dental issues, including crooked, gapped, rotated, or crowded teeth. There are several types of braces, including traditional metal braces, ceramic braces, and self-ligating braces. Braces improve your smile\'s health, function, and appearance.', image: '/images/braces.jpg' },
+  { id: 'clear-aligners', title: 'Clear Aligners', shortDescription: 'User-friendly treatment for aligning misaligned teeth with clear aligners.', longDescription: 'Clear aligners are orthodontic devices that are a transparent, plastic form of dental braces used to align misaligned teeth. They are a user-friendly treatment option for people of all ages.', image: '/images/Clear Aligners.jpg' }
 ];
+
 
 const servicesSectionStyle = {
   backgroundImage: 'url(/images/Background.jpg)',

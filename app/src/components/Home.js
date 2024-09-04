@@ -753,13 +753,15 @@ const services = [
   { title: 'Fillings and Sealants', description: 'Prevent cavities with our fillings and sealants.' },
   { title: 'Laser Dentistry', description: 'Advanced laser treatments for various dental issues.' },
   { title: 'Mouth Guards', description: 'Custom-fit mouth guards for sports and sleep.' },
-  { title: 'Online Dentist Booking', description: 'Convenient online booking for your dental appointments.' },
   { title: 'Oral Surgery', description: 'Expert oral surgery services for complex dental issues.' },
   { title: 'Root Canals', description: 'Relieve pain and save your teeth with our root canal treatments.' },
   { title: 'Teeth Reshaping', description: 'Improve the appearance of your teeth with reshaping.' },
   { title: 'Veneers and Crowns', description: 'Achieve a flawless smile with veneers and crowns.' },
   { title: 'X-ray', description: 'Accurate dental x-rays for precise diagnosis.' },
+  { title: 'Braces', description: 'Align your teeth with our professional braces services.' },
+  { title: 'Clean Aligners', description: 'Straighten your teeth discreetly with our clean aligners.' },
 ];
+
 
 const Home = () => {
   return (
