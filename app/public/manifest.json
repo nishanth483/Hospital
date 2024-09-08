@@ -3,23 +3,14 @@
   "name": "Elite Dental Care",
   "icons": [
     {
-      "src": "elitedentalcare.png",
+      "src": "/elitedentalcare.png",
       "sizes": "16x16 24x24 32x32 64x64",
-      "type": "image/png"
-    },
-    {
-      "src": "elitedentalcare192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "elitedentalcare512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
