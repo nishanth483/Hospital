@@ -5,39 +5,34 @@
   min-height: 100vh;
 }
 
-/* .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images2/background dental.jpg'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-} */
-
 
 .background-image {
-  position: fixed; /* Use fixed to keep the background fixed while scrolling */
+  position: fixed;
+  /* Use fixed to keep the background fixed while scrolling */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images2/Background.jpg'); /* Path to your background image */
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-repeat: no-repeat; /* Prevents repeating of the image */
-  background-position: center; /* Centers the background image */
-  background-attachment: fixed; /* Keeps the background image fixed during scroll */
-  z-index: -1; /* Places the background behind other elements */
+  background-image: url('../images2/Background.jpg');
+  /* Path to your background image */
+  background-size: cover;
+  /* Ensures the image covers the entire container */
+  background-repeat: no-repeat;
+  /* Prevents repeating of the image */
+  background-position: center;
+  /* Centers the background image */
+  background-attachment: fixed;
+  /* Keeps the background image fixed during scroll */
+  z-index: -1;
+  /* Places the background behind other elements */
 }
 
 
 .services-section {
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for content sections */
+  background: rgba(255, 255, 255, 0.8);
+  /* Semi-transparent background for content sections */
   padding: 4rem 0;
   margin-top: 4rem;
 }
@@ -58,17 +53,22 @@
 
 .heading a {
   text-decoration: none;
-  color: #007bff; /* Bright color */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle shadow for depth */
-  font-size: 2.5rem; /* Slightly larger font */
+  color: #007bff;
+  /* Bright color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+  font-size: 2.5rem;
+  /* Slightly larger font */
   font-weight: bold;
   display: inline-block;
   transition: color 0.3s, transform 0.3s;
 }
 
 .heading a:hover {
-  color: #0056b3; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: #0056b3;
+  /* Darker shade on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
 }
 
 .carousel-control-prev,
@@ -105,13 +105,16 @@
   border-radius: 10px;
   text-align: center;
   color: #333;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 10px;
-  width: 300px; /* Fixed width */
-  height: 200px; /* Fixed height */
+  width: 300px;
+  /* Fixed width */
+  height: 200px;
+  /* Fixed height */
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; /* Single line text with ellipsis */
+  white-space: nowrap;
+  /* Single line text with ellipsis */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +123,8 @@
 .testimonial-card p {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; /* Single line text with ellipsis */
+  white-space: nowrap;
+  /* Single line text with ellipsis */
   display: inline-block;
   width: 100%;
 }
@@ -129,7 +133,7 @@
   white-space: normal;
   height: auto;
   overflow: visible;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   border-radius: 5px;
 }
@@ -144,7 +148,8 @@
 
 .google-icon {
   font-size: 20px;
-  color: #7142f4; /* Google logo color */
+  color: #7142f4;
+  /* Google logo color */
   margin-top: 10px;
   height: 30px;
   width: 30px;
@@ -173,20 +178,25 @@
   margin-bottom: 1.5rem;
 }
 
-.carousel .testimonial-item, .carousel .contact-detail-item {
-  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+.carousel .testimonial-item,
+.carousel .contact-detail-item {
+  background: rgba(255, 255, 255, 0.7);
+  /* Semi-transparent white */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.carousel .testimonial-text, .carousel .contact-detail-text {
+.carousel .testimonial-text,
+.carousel .contact-detail-text {
   font-size: 1.2rem;
   color: #000;
-  font-weight: bold; /* Bold text */
+  font-weight: bold;
+  /* Bold text */
 }
 
-.carousel .testimonial-author, .carousel .contact-detail-title {
+.carousel .testimonial-author,
+.carousel .contact-detail-title {
   font-size: 1rem;
   font-weight: bold;
   color: #000;
@@ -196,8 +206,10 @@
   text-align: center;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  filter: invert(1); /* Invert color to white */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  /* Invert color to white */
 }
 
 .carousel-control-next-icon {

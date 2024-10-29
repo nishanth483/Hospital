@@ -31,7 +31,7 @@ const servicesSectionStyle = {
   backgroundRepeat: 'no-repeat',
   position: 'relative',
   zIndex: 0,
- marginTop : 0
+  marginTop: 0
 };
 
 const Services = () => {
@@ -60,7 +60,7 @@ const Services = () => {
   return (
     <div className="services-section" style={servicesSectionStyle}>
       <Container>
-        <h1 className="text-center mb-4" style={{color:'black'}}>Our Services</h1>
+        <h1 className="text-center mb-4" style={{ color: 'black' }}>Our Services</h1>
         <Row>
           {services.map((service, index) => (
             <Col md={4} key={index}>
@@ -92,8 +92,8 @@ const Services = () => {
         </div>
       )}
       <a href="https://api.whatsapp.com/send/?phone=918122132314&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="whatsapp-link">
-      <i className="fab fa-whatsapp whatsapp-icon"></i>
-    </a>
+        <i className="fab fa-whatsapp whatsapp-icon"></i>
+      </a>
     </div>
   );
 };
